@@ -30,7 +30,7 @@ if options.student_name:
     delimeter += options.student_name
 
 # Get common english words
-common_words = rq.get("https://raw.githubusercontent.com/dwyl/english-words/master/words.txt").text.split("\n")
+common_words = rq.get("https://raw.githubusercontent.com/twoowt/sans-index-creator/refs/heads/master/words.txt").text.split("\n")
 # function to recursively strip given characters in a word
 characters_to_strip = "()'\":,”“‘?;-•’—…[]!"
 phrases_to_strip = ["'s", "'re", "'ve", "'t", "[0]", "[1]", "[2]", "[3]", "[4]", "[5]", "[6]"]
