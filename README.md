@@ -8,7 +8,7 @@ Hacky tools to automatically create a SANS index based off the course pdf files.
 3) Convert new pdf to txt:
   `pdftotext unencryptedfile.pdf coursetxt.txt`
 4) Create index based off txt file (this can take ~5 minutes because each word is searched for in the full English dictionary):
-  `python sans_indexer.py -i coursetxt.txt -o courseindex.txt -n "John Smith"`
+  `python sans_indexer.py -i coursetxt.txt -o courseindex.txt -n "John Snow"`
 
 Please note that the -n field is used to split the txt into pages, as we use the License name as the page delimiter (it is the only string persistant across pages).
 
